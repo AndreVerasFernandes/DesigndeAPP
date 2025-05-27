@@ -1,0 +1,95 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    background: linear-gradient(180deg, #562F8D 0%, #003B7C 100%);
+    height: 100%;
+    padding-top: 40px; /* Aumenta o espaçamento no topo se necessário */
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.section {
+    margin-top: 60px;  /* Aumentei o espaçamento entre as seções */
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.add-button {
+    width: 80px;
+    height: 80px;
+    background-color: #292B3A;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.add-button .icon {
+    color: white;
+    font-size: 50px;
+}
+
+.add-button:hover {
+    background-color: #404252;
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 600px) {
+    body, html {
+        height: 100%; /* Garante que o body ocupe 100% da altura */
+    }
+
+    .container {
+        padding-top: 0; /* Retira o padding extra no topo */
+        padding-bottom: 0; /* Retira o padding extra no rodapé */
+        justify-content: center; /* Garante que o conteúdo esteja centralizado verticalmente */
+    }
+
+    .section {
+        margin-top: 30px; /* Diminui a margem entre as seções */
+    }
+
+    .title {
+        font-size: 18px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
+
+    .add-button {
+        width: 70px; /* Ajusta o tamanho do botão */
+        height: 70px;
+    }
+
+    .add-button .icon {
+        font-size: 40px; /* Ajusta o tamanho do ícone */
+    }
+}

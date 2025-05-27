@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>App - Tela Inicial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+  <!-- Tela Inicial -->
+  <div class="screen start-screen">
+    <h1 style="color:white; margin-bottom: 40px;">Bem-vindo ao App</h1>
+    <button onclick="mostrarLogin()">Começar</button>
+  </div>
+
+  <!-- Tela de Login -->
+  <div class="screen login-screen" id="loginScreen">
+    <label for="usuario">Usuário</label>
+    <input type="text" id="usuario" placeholder="Digite seu usuário">
+
+    <label for="senha">Senha</label>
+    <input type="password" id="senha" placeholder="Digite sua senha">
+
+    <button class="login-button" onclick="login()">➜</button>
+
+    <div class="login-links">
+      <p>Não possui cadastro? <a href="Signin.html">Registrar-se</a></p>
+      <p><a href="#">Esqueci a senha</a></p>
+    </div>
+  </div>
+
+<script src="script/login.js"></script>
+
+</body>
+</html>

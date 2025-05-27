@@ -1,0 +1,183 @@
+/* Estilo da Tabela */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centraliza o conteúdo verticalmente */
+    background: linear-gradient(180deg, #562F8D 0%, #003B7C 100%);
+    height: 100%;
+    padding-top: 40px; /* Aumenta o espaçamento no topo se necessário */
+}
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.section {
+    margin-top: 60px;  /* Aumentei o espaçamento entre as seções */
+    text-align: center;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.add-button {
+    width: 80px;
+    height: 80px;
+    background-color: #292B3A;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+.add-button .icon {
+    color: white;
+    font-size: 50px;
+}
+
+.add-button:hover {
+    background-color: #404252;
+}
+.chart-container {
+    width: 90%; /* Ajusta a largura do gráfico para 90% */
+    max-width: 100vw; /* Limita a largura do gráfico em dispositivos maiores */
+    margin-bottom: 20px; /* Espaçamento abaixo do gráfico */
+}
+
+/* Media query para dispositivos móveis */
+@media (max-width: 600px) {
+    body, html {
+        height: 100%; /* Garante que o body ocupe 100% da altura */
+    }
+
+    .container {
+        padding-top: 0; /* Retira o padding extra no topo */
+        padding-bottom: 0; /* Retira o padding extra no rodapé */
+        justify-content: center; /* Garante que o conteúdo esteja centralizado verticalmente */
+    }
+
+    .section {
+        margin-top: 30px; /* Diminui a margem entre as seções */
+    }
+
+    .title {
+        font-size: 18px; /* Ajusta o tamanho da fonte para dispositivos móveis */
+    }
+
+    .add-button {
+        width: 70px; /* Ajusta o tamanho do botão */
+        height: 70px;
+    }
+
+    .add-button .icon {
+        font-size: 40px; /* Ajusta o tamanho do ícone */
+    }
+    table {
+        width: 70px;
+    }
+
+    form input {
+        width: 70px;
+    }
+    .chart-container {
+        width: 100%; /* O gráfico ocupa 100% da largura em telas menores */
+        max-width: 100vw; /* Limita a largura do gráfico em dispositivos pequenos */
+    }
+    
+
+}
+
+
+table {
+    width: 80%;
+    margin-top: 30px;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.05);;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 12px 15px;
+    text-align: center;
+    color: white
+}
+
+table th {
+    background-color: #292B3A;
+    color: white;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color:rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+table tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: white;
+}
+
+button {
+    background-color: #292B3A;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #404252;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+form input {
+    width: 80%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+
+
