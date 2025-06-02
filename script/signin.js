@@ -17,9 +17,7 @@
         alert('As senhas não coincidem.');
         return;
       }
-    var usuario = document.getElementById("usuario").value
-    var email = document.getElementById("email").value;
-    var senha = document.getElementById("senha").value;  
+     
     cadastrarUsuario(usuario, email, senha)
 
       alert('Registro realizado com sucesso!');
