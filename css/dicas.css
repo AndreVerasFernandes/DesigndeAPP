@@ -1,3 +1,6 @@
+/* Estilização global da página */    
+    
+    
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -9,6 +12,8 @@
       padding: 20px;
     }
 
+
+    /* Barra superior que contém os botões de ação (voltar, baixar, atualizar) */
     .top-bar {
       display: flex;
       justify-content: space-between;
@@ -32,6 +37,7 @@
       margin-bottom: 10px;
     }
 
+    /* Caixa de conteúdo que contém as dicas *
     .content-box {
       background: rgba(255, 255, 255, 0.05);
       padding: 20px;
@@ -40,6 +46,7 @@
       max-height: 75vh;
     }
 
+    /* Estilização da barra de rolagem no Chrome e navegadores WebKit */
     .content-box::-webkit-scrollbar {
       width: 6px;
     }

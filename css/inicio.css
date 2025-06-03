@@ -3,6 +3,7 @@
       box-sizing: border-box;
     }
 
+    /* Estilos globais do corpo da página */
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
@@ -16,6 +17,7 @@
       position: relative;
     }
 
+    /* Container superior de ícones (ex: configurações, sair, etc.) */
     .top-icons {
       display: flex;
       justify-content: space-between;
@@ -39,6 +41,7 @@
       gap: 20px;
     }
 
+    /* Botões principais do menu */
     .menu-btn {
       background: linear-gradient(to right, #2d68f0, #8a45ff);
       border: none;
@@ -54,6 +57,7 @@
       transition: transform 0.2s;
     }
 
+    /* Efeito visual ao passar o mouse sobre os botões */
     .menu-btn:hover {
       transform: scale(1.05);
     }

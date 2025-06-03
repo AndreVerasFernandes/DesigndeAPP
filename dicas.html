@@ -4,19 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Dicas</title>
+    <!-- Biblioteca externa para geração de PDF com jsPDF -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <link rel="stylesheet" href="css/dicas.css">
 </head>
 <body>
-
+  <!-- Barra superior com botões de navegação -->
   <div class="top-bar">
     <button onclick="voltar()">←</button>
+    
+        <!-- Botão para fazer o download das dicas em PDF. Executa a função baixar() -->
     <button onclick="baixar()">⬇️</button>
+    
+        <!-- Botão para recarregar ou atualizar o conteúdo atual -->
     <button onclick="atualizar()">🔄</button>
   </div>
 
   <h2><strong>Dicas</strong></h2>
-
+  <!-- Caixa de conteúdo contendo as dicas listadas em formato ordenado -->
   <div class="content-box" id="conteudo-dicas">
     <ol>
       <li><strong>Iluminação Eficiente:</strong>

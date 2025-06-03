@@ -5,17 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gerenciar Dispositivos</title>
   <link rel="stylesheet" href="css/tabela.css">
+  
+  <!-- Inclusão da biblioteca Chart.js para renderizar gráficos -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
+    
+  <!-- Container principal da interface -->
   <div class="container">
     <button class="back-button" onclick="voltar()">
       <span class="icon">&#8592;</span>
     </button>
 
+    <!-- Seção principal da página -->
     <div class="section">
       <h2 class="title">Gerenciar Dispositivos</h2>
 
+    <!-- Container do gráfico gerado com Chart.js -->
      <div class="chart-container">
         <canvas id="devicesChart" width="100pw" height="100ph"></canvas>
       </div>
@@ -36,7 +42,7 @@
       </table>
     </div>
 
-    <!-- Formulário para Adicionar Dispositivo -->
+    <!-- Formulário para Adicionar Dispositivo Não está sendo usado -->
     <!--<div class="section">
       <h2 class="title">Adicionar Novo Dispositivo</h2>
       <form id="device-form">
