@@ -25,13 +25,20 @@ function abrirPerfil() {
     }
 
 
-
+/**
+ * Realiza o logout do usuário
+ * Limpa dados de sessão e redireciona para a página inicial
+ */
     function sair() {
       sessionStorage.setItem('isLoggedIn', 'false');
+      
+      // Remove informações sensíveis armazenadas na sessão
       sessionStorage.removeItem('usuario');
       sessionStorage.removeItem('email');
     checkLoginStatus();
     alert('Você foi deslogado.')
+
+    // Redireciona para a página inicial/home
     window.location.href = 'home.html';
   }
 

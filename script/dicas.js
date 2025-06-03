@@ -6,7 +6,11 @@
       location.reload();
     }
 
+    /**
+ * Gera e baixa um arquivo PDF com as dicas de consumo
+ */
     async function baixar() {
+        // Importa o construtor jsPDF da biblioteca global carregada no HTML
       const { jsPDF } = window.jspdf;
       const doc = new jsPDF();
 
@@ -32,6 +36,10 @@ Dicas de Consumo:
 - Mantenha os filtros do ar-condicionado limpos e faça a manutenção regular do sistema.
       `;
 
+      // Define fonte padrão do documento (tipo e estilo)
+      // Define o tamanho da fonte
+      // Insere o texto no PDF, começando nas coordenadas (10, 10)
+      // Dispara o download do arquivo PDF com o nome especificado
       doc.setFont("helvetica", "normal");
       doc.setFontSize(12);
       doc.text(dicas, 10, 10);

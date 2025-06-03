@@ -4,18 +4,19 @@ window.onload = function () {
 
   const apiUrl = 'https://apex.oracle.com/pls/apex/schooldesigndeapp/GETDISP/POST';
 
+  // Faz requisição POST para buscar dispositivos do usuário
   fetch(apiUrl, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
     },
-    body: JSON.stringify({ usuario, email })
+    body: JSON.stringify({ usuario, email }) // Envia dados no corpo da requisição
   })
    .then(res => {
     if (!res.ok) {
-      throw new Error(`HTTP error! status: ${res.status}`);
+      throw new Error(`HTTP error! status: ${res.status}`); // Erro se resposta não OK
     }
-    return res.json();
+    return res.json(); // Converte resposta para JSON
   })
   .then(data => {
     if (!Array.isArray(data)) {

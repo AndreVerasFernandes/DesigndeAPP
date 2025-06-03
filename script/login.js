@@ -1,3 +1,7 @@
+/**
+ * Exibe a tela de login com efeito de transição
+ */
+    
     function mostrarLogin() {
       document.querySelector('.start-screen').style.opacity = '0';
       setTimeout(() => {
@@ -5,7 +9,11 @@
         document.getElementById('loginScreen').classList.add('show');
       }, 500);
     }
-  async function login() {
+ * Realiza o processo de login, consultando API externa
+ * A função é async para aguardar a resposta da API
+ */
+  
+    async function login() {
       const email = document.getElementById('usuario').value;
       const pass = document.getElementById('senha').value;
     try {
